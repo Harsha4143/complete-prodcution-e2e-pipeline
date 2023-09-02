@@ -29,11 +29,11 @@ pipeline{
         stage("Build Application"){
             steps {
                 sh "mvn clean package"
-            }
-            steps {
                 sh "mvn clean install"
             }
-
+            
+                
+           
         }
 
         stage("Test Application"){
